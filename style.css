@@ -1,0 +1,92 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body header {
+  height: 120vh;
+  background-image: url("images/waveDown.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body header .heading {
+  margin-top: 20px;
+  color: white;
+}
+
+body header .heading img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 250px;
+}
+
+body header .heading h1 {
+  font-family: "Comfortaa", sans-serif;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 4rem;
+}
+
+body header .heading p {
+  font-family: "Roboto Mono";
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+body header .heading button {
+  display: block;
+  margin: auto;
+  padding: 15px 30px;
+  margin-top: 25px;
+  background-color: #006edc;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+body svg {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+
+body .container1 {
+  height: 120vh;
+  background-image: url("images/waveUp.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .container2 {
+  background-color: #006edc;
+  height: 100vh;
+}
+
+body footer {
+  height: 40vh;
+  background-color: #1e1e1e;
+}
+/*# sourceMappingURL=style.css.map */

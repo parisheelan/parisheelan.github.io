@@ -1,0 +1,81 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    overflow: auto;
+}
+$bg-color:rgb(30,30,30);
+$primary-color:rgb(0, 110,220);
+$secondary-color:rgb(0, 73, 146);
+p{
+    text-align:center;
+}
+a{  
+    text-align: center;
+}
+body{
+    background-color: $bg-color;
+    color:white;
+    
+    header{
+        height:120vh;
+        background-image: url("images/waveDown.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+       .heading{
+           margin-top:20px;
+           color:white;
+        img{
+            display:block;
+            margin:auto;
+            border-radius:50%;
+            width:250px;
+        }
+        h1{
+            font-family:"Comfortaa", sans-serif;
+            margin-top:50px;
+            text-align:center;
+            font-size:4rem;
+        }
+        p{
+            font-family:"Roboto Mono";
+            font-size:1.5rem;
+            margin-top:15px;
+        }
+        button{
+            display:block;
+            margin:auto;
+            padding:15px 30px;
+            margin-top:25px;
+            background-color:$primary-color;
+            border-radius:10px;
+            border:none;
+            color:white;
+            font-size:1.2rem;
+            
+        }
+    }
+    }
+    svg{
+        width:100%;
+        position:absolute;
+        bottom:10px;
+    }
+    .container1{
+        height:120vh;
+        background-image: url("images/waveUp.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container2{
+        background-color:$primary-color;
+        height:100vh;
+    }
+    footer{
+        height:40vh;
+        background-color: $bg-color;
+    }
+}
