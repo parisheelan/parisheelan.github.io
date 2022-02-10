@@ -1,4 +1,4 @@
-  html {
+html {
   scroll-behavior: smooth;
 }
 
@@ -8,15 +8,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: auto;
+  line-height: 1.6;
 }
 
-p {
+p, h1 {
   text-align: center;
-}
-
-a {
-  text-align: center;
-  text-decoration: none;
 }
 
 body {
@@ -32,7 +28,7 @@ body header {
 }
 
 body header .heading {
-  margin-top: 20px;
+  margin-top: 60px;
   color: white;
 }
 
@@ -45,7 +41,7 @@ body header .heading img {
 
 body header .heading h1 {
   font-family: 'Comfortaa', sans-serif;
-  margin-top: 35px;
+  margin-top: 25px;
   text-align: center;
   font-size: 4rem;
 }
@@ -88,10 +84,31 @@ body svg {
 }
 
 body .container1 {
-  height: 120vh;
+  height: 110vh;
   background-image: url("images/waveUp.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body .container1 .heading {
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+body .container1 .heading h1 {
+  margin-top: 70px;
+  font-weight: bolder;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 4rem;
+}
+
+body .container1 .heading p {
+  width: 60%;
+  margin: auto;
+  margin-top: 420px;
+  font-size: 1.7rem;
+  font-family: "Julius Sans One";
 }
 
 body .container2 {
@@ -99,8 +116,93 @@ body .container2 {
   height: 100vh;
 }
 
+body .container2 .crds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #004992;
+  font-family: "Comfortaa";
+}
+
+body .container2 .crds .crd {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 20px;
+  margin: 20px 80px;
+  height: 550px;
+  width: 350px;
+  background-color: white;
+}
+
+body .container2 .crds .crd h1 {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+body .container2 .crds .crd p {
+  font-family: "Roboto Mono";
+  font-size: 1.1rem;
+  padding-top: 110px;
+  color: #1e1e1e;
+  width: 80%;
+  margin: auto auto;
+}
+
 body footer {
-  height: 40vh;
+  height: 30vh;
   background-color: #1e1e1e;
+  color: white;
+}
+
+body footer .flex1 {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body footer .flex1 .flex {
+  height: 100px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body footer .flex1 .flex i {
+  margin-top: -15px;
+  font-size: 35px;
+  padding-right: 15px;
+}
+
+body footer .flex1 a {
+  text-decoration: none;
+  color: white;
+}
+
+body footer .flex1 a:hover {
+  color: #006edc;
 }
 /*# sourceMappingURL=style.css.map */
