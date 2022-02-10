@@ -1,4 +1,4 @@
-html {
+  html {
   scroll-behavior: smooth;
 }
 
@@ -16,6 +16,7 @@ p {
 
 a {
   text-align: center;
+  text-decoration: none;
 }
 
 body {
@@ -39,32 +40,45 @@ body header .heading img {
   display: block;
   margin: auto;
   border-radius: 50%;
-  width: 250px;
+  width: 16rem;
 }
 
 body header .heading h1 {
-  font-family: "Comfortaa", sans-serif;
-  margin-top: 50px;
+  font-family: 'Comfortaa', sans-serif;
+  margin-top: 35px;
   text-align: center;
   font-size: 4rem;
 }
 
 body header .heading p {
   font-family: "Roboto Mono";
-  font-size: 1.5rem;
-  margin-top: 15px;
+  font-size: 1.3rem;
+  margin-top: 10px;
 }
 
 body header .heading button {
   display: block;
   margin: auto;
   padding: 15px 30px;
-  margin-top: 25px;
+  margin-top: 50px;
   background-color: #006edc;
   border-radius: 10px;
   border: none;
   color: white;
   font-size: 1.2rem;
+}
+
+body header .heading button:hover {
+  background-color: #1e1e1e;
+  border: solid 3px #006edc;
+  padding: 12px 27px;
+}
+
+body header .heading span {
+  font-weight: bold;
+  font-size: 4.2rem;
+  color: #008cff;
+  font-family: "Comfortaa", sans-serif;
 }
 
 body svg {
