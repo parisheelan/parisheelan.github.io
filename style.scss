@@ -1,173 +1,187 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    overflow: auto;
-    line-height:1.6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $bg-color;
 }
-$bg-color:rgb(30,30,30);
-$primary-color:rgb(0, 110,220);
-$secondary-color:rgb(0, 73, 146);
-p, h1{
-    text-align:center;
+$bg-color: rgb(30, 30, 30);
+$primary-color: rgb(0, 110, 220);
+$secondary-color: rgb(0, 73, 146);
+p,
+h1 {
+  text-align: center;
 }
-a{  
-    
+a {
 }
-body{
-    background-color: $bg-color;
-    color:white;
-    
-    header{
-        height:120vh;
-        background-image: url("images/waveDown.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-       .heading{
-           margin-top:60px;
-           color:white;
-            img{
-                display:block;
-                margin:auto;
-                border-radius:50%;
-                width:16rem;
-            }
-            h1{
-                font-family: 'Comfortaa', sans-serif;
-                margin-top:25px;
-                text-align:center;
-                font-size:4rem;
-            }
-            p{
-                font-family:"Roboto Mono";
-                font-size:1.3rem;
-                margin-top:10px;
-            }
-            button{
-                display:block;
-                margin:auto;
-                padding:15px 30px;
-                margin-top:50px;
-                background-color:$primary-color;
-                border-radius:10px;
-                border:none;
-                color:white;
-                font-size:1.2rem;                
-            }
-            button:hover{
-                background-color:$bg-color;
-                border:solid 3px $primary-color;
-                padding:12px 27px;
-            }
-            span{
-                font-weight: bold;
-                font-size:4.2rem;
-                color:rgb(0, 140, 255);
-                font-family:"Comfortaa", sans-serif;
-            }
-    }
-    }
-    svg{
-        width:100%;
-        position:absolute;
-        bottom:10px;
-    }
-    .container1{
-        height:110vh;
-        background-image: url("images/waveUp.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        .heading{ 
-            margin:auto;
-            text-align:center;
-            color:white;
-            h1{
-                margin-top:70px;
-                font-weight: bolder;
-                font-family: 'Comfortaa', sans-serif;
-                font-size:4rem;
-            }
-            p{
-                width:60%; 
-                margin:auto;
-                margin-top:420px;
-                font-size:1.7rem;
-                font-family:"Julius Sans One";
-            }
-        }
-    }
-    .container2{
-        background-color:$primary-color;
-        height:100vh;
-        .crds{
-            display:flex;
-            height:100%;
-            align-items: center;
-            justify-content:center;
-            flex-wrap:wrap;
-            color:$secondary-color;
-            font-family:"Comfortaa";
-            .crd{
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-                border-radius: 20px;
-                margin:20px 80px;
-                height:550px;
-                width:350px;
-                background-color: white;
-                h1{
-                    font-weight:bold;
-                    margin-top:30px;
-                }
-                p{
-                    font-family:"Roboto Mono";
-                    font-size:1.1rem;
-                    padding-top:110px;
-                    color:$bg-color;
-                    width:80%;
-                    margin:auto auto;
-                }
-            }
-        }
-    }
-    footer{
-        height:30vh;
+body {
+  background-color: $bg-color;
+  color: white;
+
+  header {
+    height: 120vh;
+    background-image: url("images/waveDown.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .heading {
+      margin-top: 20px;
+      color: white;
+      img {
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        width: 14rem;
+      }
+      h1 {
+        font-family: "Comfortaa", sans-serif;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 3.5rem;
+      }
+      p {
+        font-family: "Roboto Mono";
+        font-size: 1.2rem;
+        margin-top: 8px;
+      }
+      button {
+        display: block;
+        margin: auto;
+        padding: 15px 30px;
+        margin-top: 50px;
+        background-color: $primary-color;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+      a {
+        text-decoration: none;
+      }
+      button:hover {
         background-color: $bg-color;
-        color:white;
-        .flex1{
-            height:100%;
-            display:flex;
-            align-items:center;
-            justify-content:space-around;
-            flex-wrap: wrap;
-            .flex{
-                height:100px;
-                width:200px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-                i{
-                    margin-top:-15px;
-                    font-size: 35px;
-                    padding-right:15px;
-                }
-                p{
-                    
-                }
-            }
-            a{
-                text-decoration: none;
-                color:white;
-            }
-            a:hover{
-                color:$primary-color;
-            }
-        }
-        p{
-            
-        }
+        border: solid 3px $primary-color;
+        padding: 12px 27px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 4rem;
+        color: rgb(0, 140, 255);
+        font-family: "Comfortaa", sans-serif;
+      }
     }
+  }
+  svg {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+  }
+  .container1 {
+    height: 110vh;
+    background-image: url("images/waveUp.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .heading {
+      margin: auto;
+      text-align: center;
+      color: white;
+      h1 {
+        padding-top: 70px;
+        font-weight: bolder;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 3.5rem;
+      }
+      p {
+        width: 60%;
+        margin: auto;
+        margin-top: 280px;
+        font-size: 1.5rem;
+        font-family: "Julius Sans One";
+        padding-bottom: 50px;
+      }
+    }
+  }
+  .container2 {
+    background-color: $primary-color;
+    height: 100vh;
+    .crds {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      color: $secondary-color;
+      font-family: "Comfortaa";
+      .crd {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 20px;
+        margin: 20px 50px;
+        height: 480px;
+        width: 300px;
+        background-color: white;
+        h1 {
+          font-weight: bold;
+          margin-top: 50px;
+        }
+        p {
+          font-family: "Roboto Mono";
+          font-size: 1.1rem;
+          padding-top: 50px;
+          color: $bg-color;
+          width: 80%;
+          margin: auto auto;
+          color: $bg-color;
+        }
+      }
+    }
+  }
+  footer {
+    height: 30vh;
+    background-color: $bg-color;
+    color: white;
+    .flex1 {
+      padding-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .flex {
+        height: 100px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          margin-top: -15px;
+          font-size: 35px;
+          padding-right: 15px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #section1 {
+    height: auto;
+  }
+  #section2 {
+    height: auto;
+  }
+  #section3 {
+    height: auto;
+  }
 }
