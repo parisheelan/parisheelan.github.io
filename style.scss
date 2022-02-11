@@ -14,8 +14,6 @@ p,
 h1 {
   text-align: center;
 }
-a {
-}
 body {
   background-color: $bg-color;
   color: white;
@@ -121,6 +119,7 @@ body {
           rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         border-radius: 20px;
         margin: 20px 50px;
+        padding: 20px 0;
         height: 480px;
         width: 300px;
         background-color: white;
@@ -174,7 +173,7 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   #section1 {
     height: auto;
   }
@@ -183,5 +182,8 @@ body {
   }
   #section3 {
     height: auto;
+  }
+  body {
+    font-size: smaller;
   }
 }
