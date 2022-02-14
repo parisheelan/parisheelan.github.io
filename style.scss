@@ -5,7 +5,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $bg-color;
 }
 $bg-color: rgb(30, 30, 30);
 $primary-color: rgb(0, 110, 220);
@@ -17,6 +16,7 @@ h1 {
 body {
   background-color: $bg-color;
   color: white;
+  overflow-x: hidden;
 
   header {
     height: 120vh;
@@ -67,7 +67,7 @@ body {
       }
       span {
         font-weight: bold;
-        font-size: 4rem;
+        font-size:4rem;
         color: rgb(0, 140, 255);
         font-family: "Comfortaa", sans-serif;
       }
@@ -79,10 +79,11 @@ body {
     bottom: 10px;
   }
   .container1 {
-    height: 110vh;
+    min-height: 110vh;
     background-image: url("images/waveUp.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    
     .heading {
       margin: auto;
       text-align: center;
@@ -96,7 +97,7 @@ body {
       p {
         width: 60%;
         margin: auto;
-        margin-top: 280px;
+        margin-top:20%;
         font-size: 1.5rem;
         font-family: "Julius Sans One";
         padding-bottom: 50px;
@@ -105,7 +106,8 @@ body {
   }
   .container2 {
     background-color: $primary-color;
-    height: 100vh;
+    min-height: 100vh;
+    display:grid;
     .crds {
       display: flex;
       height: 100%;
@@ -118,10 +120,10 @@ body {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
           rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         border-radius: 20px;
-        margin: 20px 50px;
+        margin: 20px 3%;
         padding: 20px 0;
         height: 480px;
-        width: 300px;
+        max-width: 300px;
         background-color: white;
         h1 {
           font-weight: bold;
@@ -140,7 +142,7 @@ body {
     }
   }
   footer {
-    height: 30vh;
+    min-height: 30vh;
     background-color: $bg-color;
     color: white;
     .flex1 {
@@ -173,17 +175,29 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  #section1 {
-    height: auto;
+@media(max-width:500px){
+  body{
+    header{
+      .heading{
+        h1{
+          font-size:3rem;
+        }
+        span{
+          font-size:3.5rem;
+        }
+        p{
+          font-size:1rem;
+        }
+      }
+    }
+    .container1{
+      .heading{
+        p{
+          font-size:1.5rem;
+          width: 80%;
+        }
+      }
+    }
   }
-  #section2 {
-    height: auto;
-  }
-  #section3 {
-    height: auto;
-  }
-  body {
-    font-size: smaller;
-  }
+  
 }
