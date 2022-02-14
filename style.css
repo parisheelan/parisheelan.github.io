@@ -9,6 +9,27 @@ html {
           box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0.8em;
+  background-color: #004992;
+}
+
+::-webkit-scrollbar-track {
+  background: #004992;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6ca7ff;
+  border-radius: 100vw;
+  border: 0.1em solid #006edc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4dc6ff;
+}
+
 p,
 h1 {
   text-align: center;
